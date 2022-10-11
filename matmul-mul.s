@@ -27,7 +27,7 @@
 //    }
 //}
 //
-//  NOTE: This version should call the intadd and intmul functions
+//  NOTE: This version should use the MUL/MLA and ADD instructions
 //
 ////////////////////////////////////////////////////////////////////////////////
 
