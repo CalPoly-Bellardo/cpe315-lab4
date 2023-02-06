@@ -14,6 +14,9 @@
 //  of the second row immedialely follows the last element in the first
 //  row, etc. 
 //
+//  If you run out of registers you can store values on the stack to
+//     free up registers for other uses.
+//
 //void matmul(int* C, const int* A, const int* B, unsigned int hA, 
 //    unsigned int wA, unsigned int wB)
 //{

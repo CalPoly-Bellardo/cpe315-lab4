@@ -12,12 +12,12 @@ BIN2 = mmmul
 
 all: mm mmmul
 
-mm:
+mm: $(ASRCS1) $(CXXSRCS)
 	$(CXX) $(CXXFLAGS) -c $(CXXSRCS)
 	$(CC) $(CFLAGS) -c $(ASRCS1)
 	$(CC) $(CFLAGS) -o $(BIN1) $(MMOBJS)
 
-mmmul:
+mmmul: $(CXXSRCS) $(ASRCS2)
 	$(CXX) $(CXXFLAGS) -c $(CXXSRCS)
 	$(CC) $(CFLAGS) -c $(ASRCS2)
 	$(CC) $(CFLAGS) -o $(BIN2) $(MMMULOBJS)
